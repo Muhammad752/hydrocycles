@@ -1,0 +1,70 @@
+@media (max-width:800px)
+{
+    .all{
+        grid-template-columns: auto;
+        .container{
+            .card{
+                display: block;
+            }
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3,auto);
+            overflow: hidden;
+            height: 1350px;
+            align-items: center;
+            justify-content: center;
+        }
+        .settings{
+            display: none;
+        }
+        .select{
+            display: none;
+        }
+    }
+    .topbar{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        .menu{
+            padding: 14px 10px 16px;
+            grid-column: 1/4;
+            order:4;
+        }
+    }
+    .topbar .menu{
+        display: flex;
+        flex-wrap: nowrap;
+        background: #F0F0F4;
+        overflow: hidden;
+        &__item{
+            flex-shrink: 0;
+        }
+    }
+
+
+    footer{
+        padding: 0;
+        grid-template-columns: auto;
+        .links{
+            grid-template-columns: auto;
+            align-items: center;
+            div{
+                align-items: center;
+                grid-column: 1/2;
+                flex-direction: column;
+            }
+        }
+    }
+    .navbar,.logo__sign{
+        display: none;
+    }
+    .topbar .location{
+        display: none;
+    }
+    .hide{
+        display: block;
+        text-align: center;
+    }
+    section > .container{
+        display: flex;
+        margin-bottom: 50px;
+    }
+}

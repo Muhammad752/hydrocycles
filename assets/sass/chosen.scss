@@ -1,0 +1,142 @@
+@import "default";
+@import "head";
+@import "card";
+.navigation{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+    padding: 42px 0;
+    padding-left: 15%;
+}
+.lefty{
+    h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #2F3035;
+    }
+    .code{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #2F3035;
+        opacity: 0.6;
+        padding-top: 10px;
+        padding-bottom: 26px;
+    }
+    .sb p{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: left;
+        align-items: flex-start;
+        gap: 150px;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+    .aspects{
+        display: flex;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+    .cards{
+        display: flex;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+    a{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: #1C62CD;
+        display: block;
+        margin: 30px 0;
+    }
+}
+.buyIt{
+    padding: 10px 40px;
+    background-color: #1C62CD;
+    color: white;
+    border: none;
+}
+.flexIt{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+table{
+    margin-bottom: 80px;
+    th{
+        text-align: left;
+    }
+    width: 100%;
+    tr{
+        height: 80px;
+    }
+}
+.main{
+    display: flex;
+    gap: 150px;
+}
+.details{
+    ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    }
+    background: #F0F0F4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bigcard{
+    width: 50%;
+    position: relative;
+    text-align: center;
+    &__old-price{
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        opacity: 0.6;
+        margin-bottom: 6px;
+    }
+    &__price{
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #2F3035;
+        margin-bottom: 17px;
+    }
+    a{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #1C62CD;
+        margin-bottom: 82px;
+    }
+}
+.hide{
+    display: none;
+    margin: 50px 0;
+}
+.slider{
+    display: flex;
+    gap: 50px;
+    padding: 25px 0;
+    &__item{
+        padding-bottom: 10px;
+        &.active{
+            border-bottom:  2px solid #1C62CD;;
+        }
+    }
+}
+section > .container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+@import "footer";
+@import "media";
+@import "cmedia"

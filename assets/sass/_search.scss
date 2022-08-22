@@ -1,0 +1,40 @@
+.search{
+    &__item{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2F3035;
+        display: inline-block;
+        padding:12px 28px;
+        &.active{
+            background: #F0F0F4;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+    }
+    &__text{
+        border: none;
+        width: max-content;
+        background: transparent;
+        padding-left: 20px;
+        width: calc(100% - 132px);
+        &:focus-visible{
+            outline: none;
+        }
+    }
+    &__button{
+        border: none;
+        padding: 17px 40px;
+        color: white;
+        background: $color;
+        border-radius: 3px;
+    }
+    form{
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        background: #F0F0F4;
+        border-radius: 3px;
+    }
+
+}

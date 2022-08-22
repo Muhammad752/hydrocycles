@@ -1,0 +1,147 @@
+@media (max-width:800px){
+    .types .container{
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    section, header, footer{
+        width: 100%;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .main .carousel{
+        width: 100vw;
+    }
+    .types .container .mini-card{
+        width: 70%;
+        margin: auto;
+    }
+    .topbar{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        .menu{
+            padding: 14px 10px 16px;
+            grid-column: 1/4;
+                }
+        .minimize{
+            display: block;
+        }
+    }
+    .buy{
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+    .logo{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .topbar .menu{
+        display: flex;
+        flex-wrap: nowrap;
+        background: #F0F0F4;
+        overflow: hidden;
+        &__item{
+            flex-shrink: 0;
+        }
+    }
+    .search{
+        ul{
+            display: flex;
+            overflow: hidden;
+            .search__item{
+                flex-shrink: 0;
+            }
+        }
+    }
+    .slider{
+        overflow: hidden;
+    }
+    section.search button{
+        display: none;
+    }
+    .container,.popular .container{
+        align-items: center;
+        justify-content: center;
+    }
+    .container>.card:not(:first-child){
+        display: none;
+    }
+    footer{
+        text-align: center;
+        padding: 0;
+        grid-template-columns: auto;
+        h2{
+            margin-top: 50px;
+        }
+        .links{
+            ul li:not(:first-child){
+                display: none;
+            }
+            a{
+                margin: 0 50px;
+                padding: 5px 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+            a:after{
+                content: "∨";
+            }
+            margin-top: 50px;
+            grid-template-columns: auto;
+            align-items: center;
+            div{
+                align-items: center;
+                grid-column: 1/2;
+                flex-direction: column;
+            }
+        }
+    }
+    .stocks .content{
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto auto;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 70px;
+        }
+        button{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 50px;
+            text-align: center;
+            color: #2F3035;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            padding: 0;
+        }
+    }
+    .last{
+        padding: 50px 0;
+    }
+    .social{
+        padding: 50px 0;
+    }
+    .stocks .content h2{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-size: 20px;
+
+    }
+    input:checked ~ .scrolbar{
+        left: 0;
+    }
+    input:checked ~ .cover{
+        left: 0;
+    }
+    .navbar,.logo__sign{
+        display: none;
+    }
+    .topbar .location{
+        display: none;
+    }
+}

@@ -1,0 +1,25 @@
+.stocks{
+    padding: 80px 0;
+    .content{
+        display: flex;
+        align-items: center;
+        h2{
+            display: inline-block;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 36px;
+            margin:0 46px;
+            max-width: 300px;
+        }
+        color: white;
+        padding: 28px 123px 28px 71px;
+        background-color: $color;
+        button{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 50px;
+            color: #2F3035;
+            padding: 4px 41px;
+        }
+    }
+}

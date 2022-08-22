@@ -1,0 +1,174 @@
+.navigation{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+    padding: 42px 0;
+}
+.showMore{
+    padding: 17px 42px;
+    border: none;
+    margin-bottom: 50px;
+}
+.flex{
+    display: flex!important;
+    align-items:center;
+    justify-content: left;
+    padding-left: 20px;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+.main{
+    h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #2F3035;
+        margin-bottom: 26px;
+    }
+    .choose{
+        display: flex;
+        gap: 8px;
+        &__item{
+            background: #F0F0F4;
+            border-radius: 3px;
+            padding: 4px 26px;
+            opacity: 0.7;
+            color: #2F3035;
+        }
+        margin-bottom: 50px;
+    }
+    .aspects{
+        display: flex;
+        gap: 42px;
+        h3{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: #C4C4C4;
+            padding-bottom: 8px;
+        }
+        h3.active{
+            color: black;
+            border-bottom:  2px solid #1C62CD;
+            font-weight: 700;
+        }
+    }
+    .settings{
+        width: 300px;
+        h4,h3{
+            margin-top: 41px;
+            margin-bottom: 20px;
+        }
+        input[type="text"]{
+            width: 100%;
+            padding: 7px 20px;
+            margin-bottom: 20px;
+        }
+        input[type="range"]{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        a.more{
+            margin-top: 18px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-decoration-line: underline;
+            color: #1C62CD;
+        }
+        h3{
+            display: inline-block;
+        }
+        .options{
+            display: flex;
+            justify-content: space-between;
+        }
+        .additional{
+            display: block;
+            width: fit-content;
+            margin: 15px auto;
+        }
+        .main-submit{
+            display: block;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            padding: 17px 85px;
+            border: none;
+            margin-top: 40px;
+        }
+        .chooseone{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .aksiya{
+            button{
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+                padding: 6px 15px 8px;
+                background: #F0F0F4;
+                color: #C4C4C4;
+                border: none;
+                &.sale{
+                    color: white;
+                    background-color:#1C62CD;
+                }
+                &.dealer{
+                    color: white;
+                    background-color: black;
+                }
+            }
+        }
+        .reset{
+            display: block;
+            width: fit-content;
+            margin: auto;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            text-decoration-line: underline;
+            color: #C4C4C4;
+        }
+        p{
+            display: inline-block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #2F3035;
+        }
+    }
+}
+.all{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 50px;
+        margin-bottom: 50px;
+    }
+}
+.hide{
+    display: none;
+}
+.slider{
+    display: flex;
+    gap: 50px;
+    padding: 25px 0;
+    &__item{
+        padding-bottom: 10px;
+        &.active{
+            border-bottom:  2px solid #1C62CD;;
+        }
+    }
+}
+.coverCard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
